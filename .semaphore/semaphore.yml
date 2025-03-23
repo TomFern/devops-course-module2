@@ -6,7 +6,7 @@ agent:
     os_image: ''
   containers:
     - name: main
-      image: 'registry.semaphoreci.com/ubuntu:22.04'
+      image: 'registry.semaphoreci.com/python:3.12.1'
       user: root
 fail_fast:
   stop:
