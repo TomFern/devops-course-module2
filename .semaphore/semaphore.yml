@@ -20,15 +20,10 @@ global_job_config:
   prologue:
     commands:
       - checkout
-      - pip install -r requirements.txt --cache-dir .pip_cache
-      - cache restore
 blocks:
   - name: TDD Tests
     dependencies: []
     task:
-      prologue:
-        commands:
-          - checkout
       jobs:
         - name: TDD
           commands:
