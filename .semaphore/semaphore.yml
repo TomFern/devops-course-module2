@@ -56,6 +56,6 @@ blocks:
           commands:
             - cd 4-e2e
             - pip install -r requirements.txt
-            - python app.py &
+            - nohup python app.py &
             - sleep 1
             - python test_e2e.py
