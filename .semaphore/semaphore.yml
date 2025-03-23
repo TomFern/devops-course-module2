@@ -45,7 +45,7 @@ blocks:
       jobs:
         - name: Integration
           commands:
-            - cd 3-integration-tests
+            - cd 3-integration-testing
             - python test_integration.py
   - name: End-to-end tests
     dependencies:
