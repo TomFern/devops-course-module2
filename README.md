@@ -1,4 +1,4 @@
-# Module 3 - Automated testing
+# Module 2 - Automated testing
 
 **Goal**: Learn automated testing techniques
 
