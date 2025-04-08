@@ -68,7 +68,7 @@ blocks:
           commands:
             - cd 5-test-reports
             - pip install -r requirements.txt
-            - pytest -junitxml=reports.xml
+            - pytest --junitxml=reports.xml
             - '[[ -f report.xml ]] && test-results publish report.xml'
 after_pipeline:
   task:
