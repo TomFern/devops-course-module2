@@ -11,7 +11,8 @@
    - Unit tests
    - Integration tests
    - End-to-end tests
-3. Ensure the pipeline runs without errors
+   - Test reports
+3. Check the test reports dashboard after running the pipeline one or more times
 
 ## Tips
 
