@@ -59,3 +59,20 @@ blocks:
             - nohup python app.py &
             - sleep 1
             - python test_e2e.py
+  - name: Test reports
+    dependencies:
+      - End-to-end tests
+    task:
+      jobs:
+        - name: Tests
+          commands:
+            - cd 5-test-reports
+            - pip install -r requirements.txt
+            - pytest -junitxml=reports.xml
+            - '[[ -f report.xml ]] && test-results publish report.xml'
+after_pipeline:
+  task:
+    jobs:
+      - name: Generate test reports
+        commands:
+          - test-results gen-pipeline-report
