@@ -1,5 +1,4 @@
 import unittest
-# import xmlrunner
 
 # Sample arithmetic functions for testing
 def add(a, b):
