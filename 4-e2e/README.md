@@ -4,6 +4,13 @@
 
 ## Steps
 
+Create a virtualenv with the following code:
+
+```shell
+python -m venv venv
+source venv/bin/activate
+```
+
 1. Install the dependencies using `pip install -r requirements.txt`
 2. Open `app.py`, examine this Flask application
 3. Open `test_e2e.py`, examine the test structure
